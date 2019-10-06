@@ -1,1 +1,0 @@
-# Ri32_SplashScreen
