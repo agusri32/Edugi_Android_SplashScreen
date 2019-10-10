@@ -1,14 +1,13 @@
 package xyz.imtiyaz.splashscreen;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.animation.ObjectAnimator;
+import android.widget.ProgressBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.widget.ProgressBar;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class SplashActivity extends AppCompatActivity {
+public class ActivitySplash extends AppCompatActivity {
     ProgressBar splashProgress;
     int SPLASH_TIME = 3000; //This is 3 seconds
 
@@ -26,7 +25,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //Do any action here. Now we are moving to next page
-                Intent mySuperIntent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent mySuperIntent = new Intent(ActivitySplash.this, ActivityHome.class);
                 startActivity(mySuperIntent);
 
                 //This 'finish()' is for exiting the app when back button pressed from Home page which is ActivityHome
