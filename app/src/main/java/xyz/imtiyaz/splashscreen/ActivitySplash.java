@@ -9,7 +9,7 @@ import android.os.Handler;
 
 public class ActivitySplash extends AppCompatActivity {
     ProgressBar splashProgress;
-    int SPLASH_TIME = 3000;
+    int SPLASH_TIME = 5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
